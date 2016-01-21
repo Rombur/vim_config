@@ -16,7 +16,7 @@ Plugin 'tpope/vim-vinegar'
 Plugin 'majutsushi/tagbar'
 Plugin 'valloric/youcompleteme'
 Plugin 'scrooloose/syntastic'
-Plugin 'siver/ultisnips'
+Plugin 'sirver/ultisnips'
 
 " All Plugins must be added before the following line
 call vundle#end()
