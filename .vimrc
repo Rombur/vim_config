@@ -123,6 +123,10 @@ autocmd Filetype python set foldmethod=indent
 " Do not fold by default when opening a file
 set nofoldenable
 
+" Makeshift tries the buildt file in the current directory before searching from
+" the file directory.
+let g:makeshift_use_pwd_first=1
+
 " Remap <F2> in normal mode but forbid nested remap
 :nnoremap <F2> :CtrlP<CR>
 
