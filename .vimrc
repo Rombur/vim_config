@@ -110,6 +110,8 @@ set hlsearch
 
 " Persistent undo
 set undofile
+" Folder where the undo histories are saved. The folder needs to exist.
+set undodir=$HOME/.undo
 
 " Allow to resize windows when using tmux
 set ttymouse=xterm2
@@ -126,6 +128,9 @@ set nofoldenable
 " Makeshift tries the buildt file in the current directory before searching from
 " the file directory.
 let g:makeshift_use_pwd_first=1
+
+" Open the TagBar on the left instead of the right.
+let g:tagbar_left=1
 
 " Remap <F2> in normal mode but forbid nested remap
 :nnoremap <F2> :CtrlP<CR>
