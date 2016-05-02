@@ -132,8 +132,11 @@ let g:makeshift_use_pwd_first=1
 " Open the TagBar on the left instead of the right.
 let g:tagbar_left=1
 
+" Do not ask for confimation when loading .ycm_extra_conf.py
+let g:ycm_confirm_extra_conf=0
+
 " Remap <F2> in normal mode but forbid nested remap
-:nnoremap <F2> :CtrlP<CR>
+:nnoremap <F2> :YcmDiags<CR>
 
 " Remap <F3> in normal mode but forbid nested remap
 :nnoremap <F3> :TagbarToggle<CR>
