@@ -17,6 +17,7 @@ Plugin 'majutsushi/tagbar'
 Plugin 'valloric/youcompleteme'
 Plugin 'scrooloose/syntastic'
 Plugin 'sirver/ultisnips'
+Plugin 'docker/docker' , {'rtp': '/contrib/syntax/vim'}
 
 " All Plugins must be added before the following line
 call vundle#end()
@@ -199,6 +200,9 @@ au BufNewFile,BufRead *.tex set spell
 
 " Recognize SCons* as Scons file
 au BufNewFile,BufRead SCons* set filetype=scons
+
+" Recognize cuh as CUDA file
+au BufNewFile,BufRead *.cuh set filetype=cuda
 
 " Used for the templates
 au BufNewFile * so ~/.vim/skeleton.vim
