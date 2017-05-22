@@ -17,6 +17,7 @@ Plugin 'majutsushi/tagbar'
 Plugin 'valloric/youcompleteme'
 Plugin 'scrooloose/syntastic'
 Plugin 'sirver/ultisnips'
+Plugin 'tpope/vim-obsession'
 Plugin 'docker/docker' , {'rtp': '/contrib/syntax/vim'}
 
 " All Plugins must be added before the following line
@@ -58,6 +59,9 @@ set mouse=a
 
 " Do smart indent in C++ file.
 set smartindent
+
+" Do correct indent for lambda functions
+set cindent cino=j1,(0,ws,Ws
 
 " Tabstops are 2 spaces.
 set tabstop=2
@@ -136,6 +140,9 @@ let g:tagbar_left=1
 " Do not ask for confimation when loading .ycm_extra_conf.py
 let g:ycm_confirm_extra_conf=0
 
+" Close the preview window once the string is complete.
+let g:ycm_autoclose_preview_window_after_completion=1
+
 " Remap <F2> in normal mode but forbid nested remap
 :nnoremap <F2> :YcmDiags<CR>
 
@@ -153,6 +160,9 @@ let g:ycm_confirm_extra_conf=0
 
 " Remap <F12> in normal mode but forbid nested remap
 :nnoremap <F12> :wa<CR>:make<CR>
+
+" Toggle paste option in insert map
+set pastetoggle=<F5>
 
 " Fix constant spelling mistakes can be used to make some shortcuts
 iab hte      the
