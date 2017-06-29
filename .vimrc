@@ -152,6 +152,9 @@ let g:ycm_autoclose_preview_window_after_completion=1
 " Remap <F4> in normal mode but forbid nested remap
 :nnoremap <F4> :ls<CR>:b<Space>
 
+" Remap <F8> in normal mode but forbid nested remap
+:nnoremap <F8> :set filetype=cuda<CR>
+
 " Remap <F9> in normal mode but forbid nested remap
 :nnoremap <F9> :botright cwindow<CR>
 
