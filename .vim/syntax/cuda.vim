@@ -63,9 +63,11 @@ syn keyword cudaConstant	cudaChannelFormatKindFloat
 " Functions
 syn keyword cudaFunction __ldg
 syn keyword cudaFunction __syncthreads
+syn keyword cudaFunction cudaDeviceSynchronize
 syn keyword cudaFunction cudaFree
 syn keyword cudaFunction cudaGetDevice
 syn keyword cudaFunction cudaGetErrorString
+syn keyword cudaFunction cudaGetLastError
 syn keyword cudaFunction cudaMalloc
 syn keyword cudaFunction cudaMemcpy
 syn keyword cudaFunction cudaMemcpyToSymbol
