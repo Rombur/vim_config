@@ -219,3 +219,11 @@ au BufNewFile,BufRead *.cuh set filetype=cuda
 
 " Used for the templates
 au BufNewFile * so ~/.vim/skeleton.vim
+
+" Use clang-format on save
+let g:clang_format_fallback_style='none'
+function! Formatonsave()
+  let l:formatdiff = 1
+  py3f /home/bt2/.vim/clang-format.py
+endfunction
+autocmd BufWritePre *.h,*.hh,*.hpp,*.cc,*.cpp,*.cu,*.cuh call Formatonsave()
