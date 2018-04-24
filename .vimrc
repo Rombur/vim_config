@@ -198,6 +198,7 @@ iab lenght   length
 iab shoudl   should
 iab Shoudl   Should
 iab #i       #include
+iab #d       #define
 iab phton    photon
 iab phtons   photons
 iab Phton    Photon
@@ -223,7 +224,7 @@ au BufNewFile * so ~/.vim/skeleton.vim
 " Use clang-format on save
 let g:clang_format_fallback_style='none'
 function! Formatonsave()
-  let l:formatdiff = 1
-  py3f /home/bt2/.vim/clang-format.py
+  let l:lines="all"
+  py3f ~/.vim/clang-format.py
 endfunction
 autocmd BufWritePre *.h,*.hh,*.hpp,*.cc,*.cpp,*.cu,*.cuh call Formatonsave()
