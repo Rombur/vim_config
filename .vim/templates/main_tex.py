@@ -20,8 +20,9 @@ print "\usepackage[noabbrev]{cleveref} % permet d'utiliser cref and Cref"
 print "\usepackage{caption} % permet d'utiliser subcaption"
 print "\usepackage{subcaption} % permet d'utiliser subfigure, subtable, etc"
 print "\usepackage[margin=1.in]{geometry} % controle les marges du document"
-print 
-print 
+print "\usepackage{setspace} % permet d'utiliser \doublespacing"
+print
+print
 print "\\newcommand\\bn{\\boldsymbol{\\nabla}}"
 print "\\newcommand\\bo{\\boldsymbol{\Omega}}"
 print "\\newcommand\\br{\mathbf{r}}"
