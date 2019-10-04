@@ -30,6 +30,7 @@ from __future__ import print_function
 import difflib
 import json
 import platform
+import shutil
 import subprocess
 import sys
 import vim
@@ -55,6 +56,10 @@ def get_buffer(encoding):
   return [ line.decode(encoding) for line in vim.current.buffer ]
 
 def main():
+  # If clang-format not in the path return
+  if shutil.which(binary) == None:
+    return
+
   # Get the current text.
   encoding = vim.eval("&encoding")
   buf = get_buffer(encoding)
