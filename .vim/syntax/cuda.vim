@@ -22,7 +22,6 @@ endif
 syn keyword cudaStorageClass	__device__ __global__ __host__
 syn keyword cudaStorageClass	__constant__ __shared__
 syn keyword cudaStorageClass	__inline__ __align__ __thread__
-"syn keyword cudaStorageClass	__import__ __export__ __location__
 syn keyword cudaStructure	template
 syn keyword cudaType		char1 char2 char3 char4
 syn keyword cudaType		uchar1 uchar2 uchar3 uchar4
@@ -40,6 +39,7 @@ syn keyword cudaType		cudaArray cudaChannelFormatKind
 syn keyword cudaType		cudaChannelFormatDesc cudaTextureAddressMode
 syn keyword cudaType		cudaTextureFilterMode cudaTextureReadMode
 syn keyword cudaVariable	gridDim blockIdx blockDim threadIdx
+syn keyword cudaVariable	cudaFuncAttributes
 syn keyword cudaConstant	__DEVICE_EMULATION__
 syn keyword cudaConstant	cudaSuccess
 " Many more errors are defined, but only these are listed in the maunal
@@ -69,6 +69,7 @@ syn keyword cudaFunction cudaGetDevice
 syn keyword cudaFunction cudaGetDeviceCount
 syn keyword cudaFunction cudaGetErrorString
 syn keyword cudaFunction cudaGetLastError
+syn keyword cudaFunction cudaPeekAtLastError
 syn keyword cudaFunction cudaMalloc
 syn keyword cudaFunction cudaMemcpy
 syn keyword cudaFunction cudaMemcpyToSymbol
