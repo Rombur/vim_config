@@ -15,10 +15,6 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'tpope/vim-vinegar'
 Plugin 'majutsushi/tagbar'
 Plugin 'ycm-core/youcompleteme'
-Plugin 'scrooloose/syntastic'
-Plugin 'sirver/ultisnips'
-Plugin 'tpope/vim-obsession'
-Plugin 'docker/docker' , {'rtp': '/contrib/syntax/vim'}
 
 " All Plugins must be added before the following line
 call vundle#end()
