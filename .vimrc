@@ -143,7 +143,7 @@ let g:ycm_autoclose_preview_window_after_completion=1
 :nnoremap <F2> :YcmDiags<CR>
 
 " Remap <F3> in normal mode but forbid nested remap
-:nnoremap <F3> :TagbarToggle<CR>
+:nnoremap <F3> :YcmCompleter GoTo<CR>
 
 " Remap <F4> in normal mode but forbid nested remap
 :nnoremap <F4> :ls<CR>:b<Space>
