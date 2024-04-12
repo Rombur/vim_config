@@ -139,6 +139,9 @@ let g:ycm_confirm_extra_conf=0
 " Close the preview window once the string is complete.
 let g:ycm_autoclose_preview_window_after_completion=1
 
+" Do not include header as part of the completion process
+let g:ycm_clangd_args=['--header-insertion=never']
+
 " Remap <F2> in normal mode but forbid nested remap
 :nnoremap <F2> :YcmDiags<CR>
 
