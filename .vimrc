@@ -12,8 +12,6 @@ Plugin 'VundleVim/Vundle.vim'
 " plugin on GitHub repo
 Plugin 'johnsyweb/vim-makeshift'
 Plugin 'kien/ctrlp.vim'
-Plugin 'tpope/vim-vinegar'
-Plugin 'majutsushi/tagbar'
 Plugin 'ycm-core/youcompleteme'
 
 " All Plugins must be added before the following line
